@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     2014-4-11 下午5:27:09                                                        
+
+     project    
+     description
+                   
+     yanwuyang                                                                
+     ====================================================================== -->
+<project name="project" default="default">
+    <description>
+            description
+    </description>
+
+    <!-- ================================= 
+          target: default              
+         ================================= -->
+    <target name="default" depends="depends" description="description">
+      	<exec executable="shell/run.bat" failonerror="true"></exec>
+    	
+    </target>
+
+    <!-- - - - - - - - - - - - - - - - - - 
+          target: depends                      
+         - - - - - - - - - - - - - - - - - -->
+    <target name="depends">
+    
+    	<java fork="true" failonerror="yes" classname="com.axis.demo.client.Test" classpath="build\classes;WebContent\WEB-INF\lib\*">
+    	      <arg line="2"/>
+    	</java>
+  
+    </target>
+
+</project>
