@@ -21,6 +21,8 @@ public class Test {
 	public static void main(String[] args) throws Exception {
 		ArrayList list = new ArrayList();
 		list.add(2, "ss");
+		String str="";
+		//sdsdsd
 	}
 	
 	public static void connection() throws Exception{
